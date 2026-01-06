@@ -1,0 +1,10 @@
+polar:
+  catalog-service:
+    webclient:
+      connectTimeout: 2s
+      readTimeout: 3s
+      backOffAttempts: 3
+      minBackOff: 100ms
+      jitterFactor: 0.5
+      booksRootApi: "/books"
+      getBookByIsbnUri: "/books/{isbn}"
